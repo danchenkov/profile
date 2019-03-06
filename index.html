@@ -26,7 +26,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -51,18 +51,19 @@
 
   <main class="container">
     <h1>Alexei Danchenkov</h1>
-    
+
     <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
-  
+
     <section id="about">
       <h2>About me</h2>
       <div class="offset">
-        <p>Engineer from Russia. Graduated the nuclear physics university area since 1996, after being inspired by Richard Feynman’s physics course.</p>
+        <p>Engineer from Russia. Graduated the nuclear physics university area in 1996, after being inspired by Richard Feynman’s physics course and learning all about it for 6 fascinating years.</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#knowmore">Harness the power!</button>
       </div>
     </section>
-    
+
     <section id="skills">
       <h2>Skills</h2>
       <div class="offset">
@@ -71,7 +72,7 @@
         <p>Learned C++, Pascal, Perl, PHP, Ruby and Go.</p>
       </div>
     </section>
-    
+
     <section id="social">
       <h2>Social Media</h2>
 
@@ -94,17 +95,38 @@
         </ul></p>
       </div>
     </section>
-    
+
     <section id="contact">
         <h2>Contact</h2>
         <div class="offset">
           <p>Call <a href="tel:911">911</a> when you need me.</p>
         </div>
     </section>
-      
+
     <footer>
       <p class="copyright-notice">&copy; <span class="year">2019</span> Alexei Danchenkov</p>
     </footer>
+
+    <!-- Hidden modals -->
+    <div id="knowmore" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Want to know more?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Harness the power of Engineering physics!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="self.location='https://mephi.ru/'">Yes! Show me how</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Nope. Go with Aikido</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
 

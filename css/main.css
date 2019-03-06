@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -100,9 +100,12 @@ textarea {
 body {
     background-color: hsla(200, 39%, 19%, 1);
     color: hsla(200, 15%, 90%, 1);
-    
+
     /* footer space */
-    padding-bottom: 2em; 
+    padding-bottom: 2em;
+}
+body .modal {
+  color: initial;
 }
 body:before {
     content: "";
@@ -149,7 +152,7 @@ footer {
 }
 .copyright-notice {
     font-size: 0.75em;
-    opacity: 0.9;   
+    opacity: 0.9;
     margin-bottom: 0;
 }
 
@@ -233,7 +236,7 @@ footer {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -251,7 +254,7 @@ footer {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
