@@ -16,7 +16,7 @@
     color: hsla(200, 15%, 81%, 1);
     font-size: 1em;
     line-height: 1.4;
-}
+  }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -28,22 +28,22 @@
  * Customize the background color to match your design.
  */
 
-::selection {
-    background: hsla(200, 39%, 50%, 1);
-    text-shadow: none;
+ ::selection {
+  background: hsla(200, 39%, 50%, 1);
+  text-shadow: none;
 }
 
 /*
  * A better looking default horizontal rule
  */
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+ hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -52,113 +52,121 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+ audio,
+ canvas,
+ iframe,
+ img,
+ svg,
+ video {
+  vertical-align: middle;
 }
 
 /*
  * Remove default fieldset styles.
  */
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+ fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
-    resize: vertical;
+ textarea {
+  resize: vertical;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+/*
+==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 
 
 
- /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/*
+==========================================================================
+Author's custom styles
+========================================================================== */
 
 body {
-    background-color: hsla(200, 39%, 19%, 1);
-    color: hsla(200, 15%, 90%, 1);
+  background-color: hsla(200, 39%, 19%, 1);
+  color: hsla(200, 15%, 90%, 1);
 
-    /* footer space */
-    padding-bottom: 2em;
+  /* footer space */
+  padding-bottom: 2em;
 }
 body .modal {
   color: initial;
 }
 body:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(/images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+main.container {
+  margin-left: 0;
+}
+main section>h2 {
+  border-bottom: 1px solid hsla(200, 15%, 45%, 1);
 }
 
 h1, h2, h3 {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 a {
-    color: hsla(200, 15%, 55%, 1);
+  color: hsla(200, 15%, 55%, 1);
 }
 a:hover {
-    color: hsla(200, 30%, 70%, 1);
+  color: hsla(200, 30%, 70%, 1);
 }
-main section>h2 {
-    border-bottom: 1px solid hsla(200, 15%, 45%, 1);
 
-}
 .offset {
-    margin-left: 2em;
+  margin-left: 2em;
 }
 .navbar-brand img {
-    border-radius: 10%;
-    margin-right: 0.5em;
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-top: 1px solid hsla(200, 15%, 30%, 0.5);
-    padding: 0.25em 2em;
-    width: 100%;
-    background-color: hsla(200, 39%, 19%, 1);
-}
-.copyright-notice {
-    font-size: 0.75em;
-    opacity: 0.9;
-    margin-bottom: 0;
+  border-radius: 10%;
+  margin-right: 0.5em;
 }
 
- /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid hsla(200, 15%, 30%, 0.5);
+  padding: 0.25em 2em;
+  width: 100%;
+  background-color: hsla(200, 39%, 19%, 1);
+}
+.copyright-notice {
+  font-size: 0.75em;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+/*
+==========================================================================
+Helper classes
+========================================================================== */
 
 /*
  * Hide visually and from screen readers
@@ -237,98 +245,90 @@ footer {
 }
 
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+/*
+==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+/*
+==========================================================================
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
 
-   @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  thead {
+    display: table-header-group;
+  }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    thead {
-        display: table-header-group;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
 
 
